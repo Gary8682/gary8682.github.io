@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.3.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"fang.bio","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"always","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+  </script>
+
+  <meta name="description" content="投资人和企业家，你选择做哪一个？如果你选择做投资人，你这辈子都无法体会创立自己企业并目睹其成长、失败或是成功的经历，你的个人财富的上限也远低于企业家。 成为一个投资人，注定会失去很多我想要的经历。 然而，当你手中挥舞着更多的生产要素分配权，你才能对社会施加更大的力量。 投资人无疑能掌握比企业家更多的资源。 从手上掌握的生产要素分配权的数量来看，习近平&gt;财政、货币当局&gt;投资人&gt;企业">
+<meta property="og:type" content="article">
+<meta property="og:title" content="技术 价值 中国">
+<meta property="og:url" content="http://fang.bio/2021/09/19/%E6%8A%80%E6%9C%AF%20%E4%BB%B7%E5%80%BC%20%E4%B8%AD%E5%9B%BD/index.html">
+<meta property="og:site_name" content="郭放的博客">
+<meta property="og:description" content="投资人和企业家，你选择做哪一个？如果你选择做投资人，你这辈子都无法体会创立自己企业并目睹其成长、失败或是成功的经历，你的个人财富的上限也远低于企业家。 成为一个投资人，注定会失去很多我想要的经历。 然而，当你手中挥舞着更多的生产要素分配权，你才能对社会施加更大的力量。 投资人无疑能掌握比企业家更多的资源。 从手上掌握的生产要素分配权的数量来看，习近平&gt;财政、货币当局&gt;投资人&gt;企业">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2021-09-19T04:33:20.738Z">
+<meta property="article:modified_time" content="2021-11-14T08:35:54.572Z">
+<meta property="article:author" content="郭放">
+<meta property="article:tag" content="技术">
+<meta property="article:tag" content="价值">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="http://fang.bio/2021/09/19/%E6%8A%80%E6%9C%AF%20%E4%BB%B7%E5%80%BC%20%E4%B8%AD%E5%9B%BD/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'en'
+  };
+</script>
+
+  <title>技术 价值 中国 | 郭放的博客</title>
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-105594018-1"></script>
+    <script>
+      if (CONFIG.hostname === location.hostname) {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-105594018-1');
+      }
+    </script>
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+<!-- hexo injector head_end start -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
+<!-- hexo injector head_end end --></head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">郭放的博客</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">Gary8682's Blog</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives</a>
+
+  </li>
+        <li class="menu-item menu-item-commonweal">
+
+    <a href="/404/" rel="section"><i class="fa fa-heartbeat fa-fw"></i>Commonweal 404</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://fang.bio/2021/09/19/%E6%8A%80%E6%9C%AF%20%E4%BB%B7%E5%80%BC%20%E4%B8%AD%E5%9B%BD/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="郭放">
+      <meta itemprop="description" content="身居猪圈，仰望星空。">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="郭放的博客">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          技术 价值 中国
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2021-09-19 12:33:20" itemprop="dateCreated datePublished" datetime="2021-09-19T12:33:20+08:00">2021-09-19</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2021-11-14 16:35:54" itemprop="dateModified" datetime="2021-11-14T16:35:54+08:00">2021-11-14</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E4%B8%AA%E4%BA%BA%E6%96%B9%E6%B3%95%E8%AE%BA/" itemprop="url" rel="index"><span itemprop="name">个人方法论</span></a>
+                </span>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine: </span>
+    
+    <a title="valine" href="/2021/09/19/%E6%8A%80%E6%9C%AF%20%E4%BB%B7%E5%80%BC%20%E4%B8%AD%E5%9B%BD/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2021/09/19/%E6%8A%80%E6%9C%AF%20%E4%BB%B7%E5%80%BC%20%E4%B8%AD%E5%9B%BD/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>投资人和企业家，你选择做哪一个？如果你选择做投资人，你这辈子都无法体会创立自己企业并目睹其成长、失败或是成功的经历，你的个人财富的上限也远低于企业家。 成为一个投资人，注定会失去很多我想要的经历。</p>
+<p>然而，当你手中挥舞着更多的生产要素分配权，你才能对社会施加更大的力量。 投资人无疑能掌握比企业家更多的资源。</p>
+<p>从手上掌握的生产要素分配权的数量来看，习近平&gt;财政、货币当局&gt;投资人&gt;企业家&gt;工程师、职员。</p>
+<p>一方面，不是说看不起工程师，不然我也不会自己搭建博客。我欣赏工程师的文化，我从小就喜欢鼓捣，崇尚沃兹尼亚克身上纯粹的极客精神。创造、破坏与竞技三元素中，我更喜欢创造，而非破坏和竞技，后两个不能给我带来太多快感。我甚至差一点大学就读了建筑系。</p>
+<p>另一方面，我当不了习近平。习近平掌握着全世界最多的资源，如果真想实现人生理想，这位置再合适不过了，但这位置不是谁都能当的。就像周恩来所说，明智绝非明哲保身，不明智只是匹夫之勇；匹夫之勇不是勇，是鲁、是莽、是愚，最大的勇敢莫过于看清事实而敢于实事求是。</p>
+<p>总之如果你想要为人类点亮科技树，着手塑造世界，你就要掌握更多的资源，支配更多的生产要素。那么，当投资人是再合适不过的选择了。</p>
+<p><code>**技术，价值，中国。**</code> </p>
+<p><strong>技术：</strong></p>
+<p>我关于技术的世界观，所以说白了，在另外一篇《技术是什么》的博客中有更详细的阐述。</p>
+<p>我相信技术的力量，技术元素作为一个整体是有意识的存在，千万年以来与人类社会协同进化。我想投资就是为人类点亮科技树，手上掌握着生产要素的分配权，要素分配的好，就能赚钱，社会也会给投资人回报。投资要看重对技术的贡献， </p>
+<p>不是说要看重对社会的贡献，而是说要看重对技术的贡献，因为技术不是人类社会的附属品，而是与人类社会平行的存在，二者已经共舞万年之久。 </p>
+<p><strong>价值：</strong></p>
+<p>价值是啥？对于投资人来说，就是得把钱扔到它该去的地方。你手上用来投资的钱，不是钱，而是社会生产要素的分配权。这东西不是开玩笑的，投资人投错了项目，就的浪费了好几千万的社会生产要素。我这段时间在国企创投机构实习，最大的感受就是，每周都看着几千万的钱去了它不该去的地方，所以湖南这地界的创投机构，不是在创造价值，而是每天都在价值毁灭。</p>
+<p>投资人的本职就是创造价值。投资人掌握着社会托管给你的“生产要素分配权”，你就不能滥用这个权力。投资人看似是在投钱，实际上是在分配生产要素，把资源扔到创造价值的能力更高的企业上去。</p>
+<p>我相信技术能够创造价值，并且任何资本都应该以创造价值为目标。财务价值永远是狭义的价值，但财务价值是唯一一个可以衡量、量化的价值。ROE，就是利用生产要素的效率。ROE越高，就说明生产要素的利用效率越高。不管是什么行业，都应该把资源交给ROE更高的企业。当然，除了财务价值，我们还应该关注社会价值、生态价值等无法衡量价值。我不是不注重财务价值以外的价值，只是财务价值以外的无形价值都太难以衡量了，所以都是先考虑可完美量化的财务价值，然后再考虑广义的价值。</p>
+<p>我一直都说，赚价值的钱容易，赚情绪的钱难。价值投资是一件很容易的事情，只需要掌握价值，估计价值，你的投资组合就能够每年给你带来10%-15%的收益。对于我来说，我对二级市场上投资的追求就是，用尽量少的时间，以传统的价值投资方式，每年追求10%-15%的收益。</p>
+<p><strong>中国：</strong></p>
+<p>过日子可以出国，发达国家GNI购买力都是中国的好几倍，就是做同样的工作，在中国只能买几分之一的东西。</p>
+<p>但我实在没有什么理由跑国外去，为什么放着眼前这个巨大的机会不放呢？国运当头，为什么要离开中国呢？除了中国，还有哪个国家的地位能上升的如此之快呢？ 在我差不多到中年的时候，中国就是世界第一大经济体。</p>
+<p>其实不光可以留在中国，还可以一直留在北京。有人问我为什么不出国，出去见见世面。刚开始我也想，我不出国会不会有遗憾。后来我想明白了，其实在北京长大的，去大多数地方我都见不了世面，去伦敦、纽约以外的城市，都不如留在北京。 华盛顿毛泽东都没出过国，都成了两国近代史最伟大的任务，因为这两片土地都足够广阔，足以孕育伟人。</p>
+<p>北京在将来，会是华盛顿+硅谷。对于金融产业，我长大的地方，将是世界第一大经济体的财政中心和货币中心，会是中国的创投天堂和早期投资的聚集地，成为中国版本的硅谷+华盛顿+雅典。如果我生在积水潭，在望京长大，窗户外面那个写字楼里上市的企业比长沙还多，那我就没有什么理由去别的地方了。</p>
+<p>北京是特别的，北京永远都不想成为其他城市，她不愿意改变自己，因为自己的文化底蕴足够深厚。北京的深度，岂是纽约、伦敦、上海能比拟的？要知道，北京这座城市文化的深度，同化了多个尝试占领她的文明。元朝人打进来，变成了北京人。满族人打进来，也变成了北京人。北京的文化，能够容纳、同化她的侵略者，这是多高的文化浓度啊。</p>
+<p>中国，我不认可她的制度，她是专制的，她是不民主的。但是我可以接受这一点，因为这个我不喜欢的制度，对于当下的中国是最好的。上大学以来，我接触了很多全国各地的人。我发现大多数同学，并不在意自己是否被国家约束，他们甚至不把自由当作一件神圣之物来看待。我之所以崇尚民主自由的制度，是因为专制体制会剥夺我所珍视的自由。但是我发现很多人根本就没把自由当回事，他们认为自由不是什么神圣的东西，即使从他们神圣剥夺了也没事。 </p>
+<p>我相信，民族的性格决定其制度，而不是制度决定民族性格。民族的特质是很难改变的，只有时间才有力量改变它。左右人们的是各种思想、感情和习惯，这是我们的本性使然。各种制度和法律，只不过是民族性格的体现罢了，是民族特质需要的外在表述。作为民族特质的产物，法律和制度是无法反过来在短时间内改变民族特质的。</p>
+<p>我相信中国在三五百年内，会完成她的民主化进程，但是在短期内维护她的专制制度，是对中国有益的。中国人根本就没有珍视自己的民主权利，那干脆就专制起来，完成社会主义现代化。 </p>
+
+    </div>
+
+    
+    
+    
+        
+
+  <div class="followme">
+    <p>Welcome to my other publishing channels</p>
+
+    <div class="social-list">
+
+        <div class="social-item">
+          <a target="_blank" class="social-link" href="https://t.me/Gary8682Blog">
+            <span class="icon">
+              <i class="fab fa-telegram"></i>
+            </span>
+
+            <span class="label">Telegram</span>
+          </a>
+        </div>
+    </div>
+  </div>
+
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E6%8A%80%E6%9C%AF/" rel="tag"># 技术</a>
+              <a href="/tags/%E4%BB%B7%E5%80%BC/" rel="tag"># 价值</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2021/08/15/%5B%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0%5D%E4%BC%9F%E5%A4%A7%E7%9A%84%E5%8D%9A%E5%BC%88/" rel="prev" title="伟大的博弈 读书笔记">
+      <i class="fa fa-chevron-left"></i> 伟大的博弈 读书笔记
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2021/11/14/%E8%BF%99%E6%AE%B5%E6%97%B6%E9%97%B4%E8%A7%81%E5%88%B0%E7%9A%84%E4%BB%B7%E5%80%BC%E6%AF%81%E7%81%AD/" rel="next" title="这段时间见到的价值毁灭">
+      这段时间见到的价值毁灭 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+    <div class="comments" id="valine-comments"></div>
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">郭放</p>
+  <div class="site-description" itemprop="description">身居猪圈，仰望星空。</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">17</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+        <span class="site-state-item-count">7</span>
+        <span class="site-state-item-name">categories</span>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">20</span>
+        <span class="site-state-item-name">tags</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="sidebar-button motion-element"><i class="fa fa-comment"></i>
+    Chat
+  </a>
+  </div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/Gary8682" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;Gary8682" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="/guofang8682@gmail.com" title="E-Mail → guofang8682@gmail.com"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://stackexchange.com/users/12930934/fang-guo" title="StackOverflow → https:&#x2F;&#x2F;stackexchange.com&#x2F;users&#x2F;12930934&#x2F;fang-guo" rel="noopener" target="_blank"><i class="fab fa-stack-overflow fa-fw"></i>StackOverflow</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://www.reddit.com/user/Gary8682" title="Reddit → https:&#x2F;&#x2F;www.reddit.com&#x2F;user&#x2F;Gary8682" rel="noopener" target="_blank"><i class="fab fa-skype fa-fw"></i>Reddit</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://t.me/Junping_Xu" title="Telegram → https:&#x2F;&#x2F;t.me&#x2F;Junping_Xu" rel="noopener" target="_blank"><i class="fab fa-skype fa-fw"></i>Telegram</a>
+      </span>
+  </div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 2017 – 
+  <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">郭放</span>
+</div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+
+<script>
+NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
+  NexT.utils.getScript('//unpkg.com/valine/dist/Valine.min.js', () => {
+    var GUEST = ['nick', 'mail', 'link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item => {
+      return GUEST.includes(item);
+    });
+    new Valine({
+      el         : '#valine-comments',
+      verify     : false,
+      notify     : false,
+      appId      : 'lSbuwPbhjhckeoOLPpXuWvER-gzGzoHsz',
+      appKey     : 'IlVw4rgQ9VFotOGReFjrOCgn',
+      placeholder: "在此输入给郭放的评论",
+      avatar     : 'mm',
+      meta       : guest,
+      pageSize   : '10' || 10,
+      visitor    : false,
+      lang       : '' || 'zh-cn',
+      path       : location.pathname,
+      recordIP   : false,
+      serverURLs : ''
+    });
+  }, window.Valine);
+});
+</script>
+
+</body>
+</html>

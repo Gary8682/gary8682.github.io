@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.3.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"fang.bio","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"always","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+  </script>
+
+  <meta name="description" content="技术是什么？ 未完成#这是一篇长期未完成的文章，此标识将在完成后消失 这篇文章将长期处于未完成状态，主要是对读过的基本相关书籍中，有意思的部分，外加一些自己的拙见。 有些部分的逻辑结构不完整，这是因为我还没写完那个部分。 一、为什么选择技术决定论视角最近看了很多研究报告，自己也整理了几个行业的历史进程，对于一些具体的问题也尝试着建立模型来描述和预测技术的历史进程。 在我们描述和预测产业发展路径时，">
+<meta property="og:type" content="article">
+<meta property="og:title" content="技术是什么?">
+<meta property="og:url" content="http://fang.bio/2021/02/11/%E6%8A%80%E6%9C%AF%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9F/index.html">
+<meta property="og:site_name" content="郭放的博客">
+<meta property="og:description" content="技术是什么？ 未完成#这是一篇长期未完成的文章，此标识将在完成后消失 这篇文章将长期处于未完成状态，主要是对读过的基本相关书籍中，有意思的部分，外加一些自己的拙见。 有些部分的逻辑结构不完整，这是因为我还没写完那个部分。 一、为什么选择技术决定论视角最近看了很多研究报告，自己也整理了几个行业的历史进程，对于一些具体的问题也尝试着建立模型来描述和预测技术的历史进程。 在我们描述和预测产业发展路径时，">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="http://fang.bio/home/fang/Blog/(2021)gary8682_next_theme/source/_posts/images/%E6%8A%80%E6%9C%AF%E6%98%AF%E4%BB%80%E4%B9%88_1.jpg">
+<meta property="article:published_time" content="2021-02-11T04:12:57.000Z">
+<meta property="article:modified_time" content="2021-05-12T03:43:51.840Z">
+<meta property="article:author" content="郭放">
+<meta property="article:tag" content="长期未完成">
+<meta property="article:tag" content="读书笔记">
+<meta property="article:tag" content="VC&#x2F;PE">
+<meta property="article:tag" content="产业">
+<meta property="article:tag" content="复杂性科学">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://fang.bio/home/fang/Blog/(2021)gary8682_next_theme/source/_posts/images/%E6%8A%80%E6%9C%AF%E6%98%AF%E4%BB%80%E4%B9%88_1.jpg">
+
+<link rel="canonical" href="http://fang.bio/2021/02/11/%E6%8A%80%E6%9C%AF%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9F/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'en'
+  };
+</script>
+
+  <title>技术是什么? | 郭放的博客</title>
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-105594018-1"></script>
+    <script>
+      if (CONFIG.hostname === location.hostname) {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-105594018-1');
+      }
+    </script>
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+<!-- hexo injector head_end start -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
+<!-- hexo injector head_end end --></head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">郭放的博客</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">Gary8682's Blog</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives</a>
+
+  </li>
+        <li class="menu-item menu-item-commonweal">
+
+    <a href="/404/" rel="section"><i class="fa fa-heartbeat fa-fw"></i>Commonweal 404</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://fang.bio/2021/02/11/%E6%8A%80%E6%9C%AF%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9F/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="郭放">
+      <meta itemprop="description" content="身居猪圈，仰望星空。">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="郭放的博客">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          技术是什么?
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2021-02-11 12:12:57" itemprop="dateCreated datePublished" datetime="2021-02-11T12:12:57+08:00">2021-02-11</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2021-05-12 11:43:51" itemprop="dateModified" datetime="2021-05-12T11:43:51+08:00">2021-05-12</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/" itemprop="url" rel="index"><span itemprop="name">读书笔记</span></a>
+                </span>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine: </span>
+    
+    <a title="valine" href="/2021/02/11/%E6%8A%80%E6%9C%AF%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9F/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2021/02/11/%E6%8A%80%E6%9C%AF%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9F/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <h1 id="技术是什么？-未完成"><a href="#技术是什么？-未完成" class="headerlink" title="技术是什么？ 未完成"></a>技术是什么？ 未完成</h1><p><code>#这是一篇长期未完成的文章，此标识将在完成后消失</code></p>
+<p>这篇文章将长期处于未完成状态，主要是对读过的基本相关书籍中，有意思的部分，外加一些自己的拙见。</p>
+<p>有些部分的逻辑结构不完整，这是因为我还没写完那个部分。</p>
+<h3 id="一、为什么选择技术决定论视角"><a href="#一、为什么选择技术决定论视角" class="headerlink" title="一、为什么选择技术决定论视角"></a>一、为什么选择技术决定论视角</h3><p>最近看了很多研究报告，自己也整理了几个行业的历史进程，对于一些具体的问题也尝试着建立模型来描述和预测技术的历史进程。</p>
+<p>在我们描述和预测产业发展路径时，不同的人有不同的方法论，会从不同的角度来解释产业的进化。我们都会形成自己独特的理论，把自己对世界的认识总结成一些容易记住的话，从而指导我们对产业、公司与技术的投资，建立合适的交易结构。</p>
+<p>看待投资的角度有很多，但是有道理的很少。这并不是在排出投资风格的优劣，显然每个行业的头部都聚集着顶级的精英，能够驾驭行业的人，不会因为所在行业的特点而有“不同的身段”。</p>
+<p>有的人强调资本的力量，认为许多行业的发展路径，就是资本博弈的痕迹。当年的“百团大战”，后来的网约车、共享单车，还有街上的无数奶茶店，如今都只剩下了少数几家公司——哈喽单车，滴滴打车，首汽约车，还有少数几个我们无比忠诚的奶茶品牌。的确，近年来吸引我们眼球、为投资机构创造百倍收益的，通常都是对模式的投资，在这种情况下，行业的未来一眼可以忘穿，除了资本和人生活痛点、痒点，不存在其他强大的力量始终决定这行业发展的路径。毕竟奶茶店的未来，只不过是多开几家店，多出几个新口味；共享单车的未来，也不过是功能做的实用一些。以上的几个例子，只是满足我们生活中的小需求，把他们做好，并不难。产业化初期，惨烈的竞争中剩下来的几家公司，一定就是能带来最多价值的吗？不一定。这里面有很多随机的因素，但是其中最重要的，是资本的青睐。他们都是因为资本的追捧，获得了无尽的资源和扩张的可能。在强调资本的语境下，行业和技术没有主动性，是“被资本牵着鼻子走的”。</p>
+<p>有的人强调需求的驱动。换句话说，就是人需求的变与不变，决定了行业发展的路径。服装行业，家具行业等行业的需求都有周期性，家具和服装的款式是有限的，当人们对看一个款式看腻了，就会倾向于新的款式；有些衣服的趋势甚至有简单的周期性，真的就是几个款式，几年轮一回，等大家看腻了，就复古。另外，近年来兴起的电商平台、外卖，实际上都是在不断挖掘人内心中潜在的需求，利用及其敏锐的嗅觉洞察需求的变化。抖音、快手都是抓住了人们碎片时间的需求，靠着人们的注意为资本产生价值。但也不乏过度的消费主义带来的伪需求：打开支付宝，看着那上百个功能，有几个是真的需要的、又有多少功能的需求是被蚂蚁硬生生造出来的？所以在强调需求驱动的语境里，资本是可以培养伪需求的，比如靠着人们的虚荣心，靠着拿捏人们的心理规律等。</p>
+<p>有的人强调产业政策。这在不同国家的语境下，是不一样的。美国的产业政策体系、联邦德国延续下来的产业政策体系、日本战后大藏省与通产省的产业政策体系、中国特色社会主义环境下的产业政策体系，都是不一样的。以我们今年来的产业政策为例，仿佛技术和行业都是被四部门选好的，哪条赛道能走、哪条赛道不能走、这个技术能不能形成赛道，都是四部门替你想好的。仿佛技术和产业，都乖乖的在产业政策安排好的路径内发展。但这并不表明不合理的产业政策依然能够决定行业和技术的趋势。</p>
+<p>甚至有一些投资的视角，就是简单的套利机器。类似九鼎投资。中国公司的IPO是被人为卡住的，一旦有卡，那就有上市溢价。这使得中国的股权投资可以和国外不一样，不需要赚增长的钱，只要找到那些油，捞起来，也就是上市前入股，就能赚钱。九鼎投资干的事情，就是系统化地利用扭曲的制度套利。虽然说赚钱的模式无所谓好，无所谓坏，也许九鼎投资的创始人在其他领域充满情怀与使命感；但是一旦我们带着真正的价值创造和价值发现的眼光来看待这种模式，就无法作出中性或正面的评价了。就像巴菲特所说的：”for many, gushers of easy money washed away ethical sensitivities.”</p>
+<p>这些视角都没有错误。但我相信技术驱动，我相信技术对行业进程的影响，我相信技术元素在文明进程中贯穿始终的影响，我相信技术与生命作为逆熵的力量能够创造宇宙中无数奇观。</p>
+<p>尽管我一个项目都没投过，但我会尝试着建立属于自己的技术决定论的投资视角。</p>
+<p>技术到底用什么样的方式影响一个行业？技术是如何获得这些力量的？有些事情细细想来，会让我们觉得不可思议。把合金片和矿物燃料放到一起，我们就可以突破音障，飞向宇宙。把原子核旋转产生出来的信号加以组织，我们就可以显现出大脑中神经回路的图像。这些对于我来说，都是奇迹。</p>
+<p>我相信技术引导着行业的发展，但在思考技术与行业、技术与投资关系之前，我希望先停下来想一想，技术是什么，技术想要什么？</p>
+<p>投资，需要有自由的眼光（free perception），必须能够同时近观和远看同一个话题。要能够自由地调节、评价与对比远近观察的结果，保持孤持（apartness）。想提出自己的观点，就一定要冒着错误的风险，要干预提出有启发性的观点。我选择技术决定论的视角，既要判断具体技术的前景与原理，又要从金钱的角度评价一个行业的前景，更要能够保持远观，判断技术的必然，判断技术进化的方向，总结出技术的本质来指导自己。</p>
+<p>技术从创世之初，就与热力学第二定律斗争，捕获和利用宇宙中的规律，遵循着物质、能量和信息的本质所决定的固有方向，创造了自然中无数的奇观，抵抗熵的侵蚀。技术与生命并列而行，是最强大的逆熵力量。</p>
+<p>技术在本质上有自己的偏好，会朝着特定的方向发展。换句话说，技术的发展路径带有一定的必然性。这听起来像是废话，但我们的确很少有人认真思考技术“必然性”的意义。有什么证据证明技术会遵循一定的发展路径？技术为什么会遵循必然性？技术将来的走向如何？还有很多类似的问题，是我们通常欠缺考虑的。</p>
+<p>凯文凯利(KK)为了强调自己的观点，甚至直接把技术称作微生物、菌类、植物和动物以外的“第七王国”，将其称之为”The     Technium”。是的，技术有自己的进化能力，技术早就孕育出了自己的倾向性、组织性与活力，与生物界和人类交织、共同演化。KK的书中将生物的器官与相关范畴也列入了技术，我不会讨论这种分类是否合适，但这种独特的视角的确带来许多有趣的发现。技术固有方向”仿佛有意地将生物引导到一个高度复杂的、精巧的方向，比如眼睛、翅膀、双足、回声定位系统，以及蚂蚁、蜜蜂、啮齿动物和哺乳动物的互助行为。更重要的是，这种“趋同进化”是跨物种的。</p>
+<p>承认科技发展仿佛有固有的“方向”，第一眼会被视为“拟人”的写作手法。但我们这里并不是在拟人，我们在用技术决定论的视角看世界的时候，就认为技术是有意识的。</p>
+<p>这里所指的“技术的偏好”并不会主宰那些具体而微的实例。譬如，因特网的形态——由网络组成的遍布全球的网络——是一种必然，但我们所采用的因特网的具体实现就不是必然。因特网可能是商业化的，而不是非营利的；它可能是国家的（中国的Internet sovereignty就是一个具有争议性的概念），而不是国际的；它也可能是私密的，而非公开的（这些网络的可能形态在因特网成为主流之前都被充分讨论过，但是我忘了他们的具体名字了）。长距离传输语音信息的电话系统是必然的，但iPhone不是；四轮车辆是必然的，但特斯拉不是；即时信息是必然的，但微博不是。区块链是必然，但是比特币不是。</p>
+<p>是的，这里的科技的必然，指的是科技本质的产物，而不是社会本质的产物。换句话说，我们强调的技术的必然性，是技术本身的特征导致的，而不是技术作为”社会的附庸“的一些特点。</p>
+<p>科技，作为一个有倾向性的集合体，会自我修复，自我保护，自我维护，对目标进行控制，甚至进行自我改进。</p>
+<p>我会认为技术除了满足人类的需求，还会去满足自己的需求。（当然我知道这不是真的，但如果我们坚持用这个特殊的角度来看待问题，就能发现很多有意思的事情。）不同于人的需求，人的需求是从生理和心理层面上产生的，而技术的需求是在宇宙的基本规律中涌现出来的。</p>
+<h3 id="二、问题-未完成"><a href="#二、问题-未完成" class="headerlink" title="二、问题 未完成"></a>二、问题 未完成</h3><p>技术究竟是什么？我是指，在最深刻的本质上结构，技术究竟是什的么？技术从哪里来？技术是如何进化的？这几个问题都是我想要回答的。</p>
+<p>我们对技术了解很多，却很少有人抽象地去理解技术，也许技术(technique)作为一种技艺，也许是中国人过于注重“道、法、术、器”的思维，崇尚道、法层面的思考，以至于我们对具体技术(individual technology)以外的事情知之甚少，认为技术是不值得研究的，甚至有些人对”器“的层面有下意识的厌恶。这不是所谓的“传统士大夫阶层对技术的态度遗传至今”，西方时间也缺乏这方面的系统理论。加上”科学“在近现代的兴起，使得技术一直活在科学的阴影中，那些思考技术是什么的人，通常搜是社会学者和哲学家，这好吗？这不好。</p>
+<p>我倾向于将技术看作有意识的集合体，在这里，我们将进化定义为”某类事物的所有对象衍生于其以往对象的集合的过程。</p>
+<blockquote>
+<p>技术总是进行着这样的一个循环，为解决老问题而去采用新技术，而新技术的采用又带来新的问题，新的问题的解决又需要新的技术。当然，这种技术的循环已经是我们大多数人都已经意识到的。现在看来，某些技术的确是进化而来的，但同时有些技术不是，他们不是以往技术及其组合的变种。</p>
+</blockquote>
+<blockquote>
+<p>但是现在可以确定的是，技术在某种程度上是来自此前已有技术的新的组合，可以将此种进化定义为“组合进化”。另外，如果技术真的是以前技术的组合，那么现存技术的储备一定是在某种程度上提供了组合的成分。另外，技术的构建不仅来自已有技术的组合，还来自与对自然现象的捕捉和征服。总之，技术来源于有差异的遗传，组合进化和外部输入的创新。</p>
+</blockquote>
+<blockquote>
+<p>这样简单的描述很容易，但是如果我们需要进一步的推断，还需要更详细一些。</p>
+</blockquote>
+<blockquote>
+<p>另外，对于我关心的角度来讲，也就是从产业投资的角度，问题依然是：什么样的技术是有前景的？如何判断技术的前景？如何评价技术的价值，以及我该不该投某一个具体的项目？这个技术到底能不能成为投资标的？另外还有关于技术的期限问题：这项技术的生长曲线如何，要多久成熟？我该设置怎样的产品结构期限？我要如何设置退出时间？……</p>
+</blockquote>
+<blockquote>
+<p>我这是在尝试着以“技术决定论”的视角来看待产业投资，这就意味着，我不能要求技术臣服与我们的需求，技术有自己的需求。技术与人类文明是平行的概念，他们应该是互相指引的，而不是谁牵着谁走。</p>
+</blockquote>
+<h3 id="三、技术必然的发展方向-未完成"><a href="#三、技术必然的发展方向-未完成" class="headerlink" title="三、技术必然的发展方向 未完成"></a>三、技术必然的发展方向 未完成</h3><p>不管是自然界还是人类的技术，趋同进化的现象都广泛存在。比如，三色视觉在不同的路径上被独立进化了多次，眼睛被进化了两次，翅膀被进化了四次，双目视觉进化了数不清多少次，这种趋同进化的生物结构的例子，甚至在早已分离数千万年的不同大陆上也会出现。人类的技术也经常在世界的两个甚至多个地方被同时独立发明。总之，生命用过的大多数方法不只一种有机体使用，也不止一个门类使用。没有被自然界重复使用的特征才是罕见的。</p>
+<p>视网膜紫质是又一个趋同进化的例子。在遥远的过去视网膜紫质曾经分别在两个独立物种王国中进化，一次是太古代细菌，一次是真菌。然而，可能存在的蛋白质链数量是个天文数字。组成所有蛋白质的基本分子结构有数百个。在化学层面上，进化能够产生（或发现）的可能蛋白质链总数是100^20（实际上，很多蛋白质链要远大于几百，不过为了说明这不是随机现象，我们在这里把数字取100，足矣说明问题。），可能存在的蛋白质链数量比宇宙中的恒星还要多，然而视网膜紫质的蛋白质却做到了独立进化两次，这就像是闪电同时击中同一个地方两次。</p>
+<p>所以趋同进化一定是在类似的约束力共同作用时，出现的类似的结果——太古代细菌的视网膜紫质和真菌的视网膜紫质，以及鱼龙和海豚，都漂浮在同样的海洋环境中，都拥有自适应产生的优势。就视网膜紫质的例子而言，因为包围原始分子的浆液基本相同，自然选择压力往往有助于每次朝同样的方向跳跃。实际上，环境生态位的匹配常被用于解释趋同进化出现的原因。不同大陆的干燥沙漠都出产大耳朵、长尾巴、蹦蹦跳跳的啮齿类动物，这是因为气候和地形塑造了一系列相似的压力和优势。</p>
+<p>总之，进化受到两种压力驱使，产生某种必然的重现结构：<br>1．几何和物理法则施加负面约束，限制生命机会的范围。<br>2．相关联的基因和新陈代谢路径所构成的自组织复合体施加的正面约束，产生几种重复出现的新机会。</p>
+<p>可能的原子组合方式有很多种，但是行的通的很少。生命不是在所有方向上都无边无界，而是收到物质世界的很多限制。这些限制使得效率没有成为进化的最终问题——进化出来的东西，能用就行，因为大多数时候你找不到替代品。比如叶绿素就无法吸收太阳光最强的波段，但是几十亿年的进化都没有找到替代品，也许根本就不存在更好的碳基分子来将光转化为糖了，而眼睛的多次独立进化也只找到了紫质分子一个解决方案。</p>
+<p>目前关于进化的正统科学观点认为，变化的主要成因只有一个：随机变异。在自然界，后代幸存者是可遗传的随机变异自然选择的结果。因此，在进化过程中，只有随机进步，不存在定向发展。过去30年对复杂自适应系统的研究得出的主要认知提供了相反的观点：自然选择导致的变异并不总是随机的。试验表明，“随机”的变异通常不是固定方向的；另一方面，变异受到物理和几何法则的控制；最重要的是，变异常常是由自组织体（这里指的是DNA螺旋体）再现模式的固有可能性引发的。</p>
+<p>在以往的观念中，内部（变异来源）产生变化，而外部（自适应的环境来源）选择或引导这种变化；在新观念中，外部（物理和化学约束）产生结构，内部（自组织）选择或引导这种结构。当受到内部引导时，进化转向重现结构。进化的复杂性产生了“为优化准备的固有通道”。（我爱复杂性）共有结构的重现不是因为共同的进化史，而是因为共同的生命起源；它的形成，不是来自外部环境，而是由于自组织复合体的内部动力。必然性是外熵性质的力量，是像进化中的生命一样复杂的系统自发形成的自组织。</p>
+<p>生命的产生是宇宙的必然，无论何时何地，它都会以相似的形式出现。生命和意识的产生，是物质规律的自然显现，事先已被编入宇宙的结构之中。</p>
+<p>同样，技术的发展路径 ，也早就被编入了宇宙的结构之中。</p>
+<p>第一次观察到太阳黑子的不是两个人，而是4名独立观测者，包括伽利略，时间都在1611年。我们知道温度计有6位不同的发明人，皮下注射针头有3位。爱德华·詹纳（Edward Jenner）之前有4位科学家各自独立地发现了接种疫苗的功效。肾上腺素有4次被“首次”分离。3位不同的天才发现（或者说发明）了小数。电报被约瑟夫·亨利（Joseph Henry）、塞缪尔·莫斯（Samuel Morse）、威廉·库克（William Cooke）、查尔斯·惠斯顿（Charles Wheatstone）和卡尔·施泰因海尔（Karl Steinheil）反复发明。法国人路易·达盖尔（Louis Daguerre）以摄影技术发明者著称，但还有3人——尼塞福尔·涅普斯（Nicephore Niepce）、赫尔克里士·弗洛伦斯（Hercules Florence）和威廉·亨利·福克斯·塔尔博特（William Henry Fox Talbot）——也各自研究出同样的技术。对数的发明通常归功于两位数学家——约翰·内皮尔（John Napier）和亨利·布里格斯（Henry Briggs），可事实上，第三位数学家约斯特·比尔吉（Joost Burgi）比他们早3年发明对数。英美两国都有若干发明家同时制造出打字机。两位科学家于1846年分别预测出第八颗行星海王星的存在。再看3个化学例子，氧的液化、铝的电解和碳的立体化学分别被多人发现，这3个例子中每一项同步发现的时间相差大约不到1个月。</p>
+<p>关于技术被人发明的过程，我们可以用这样一个金字塔型的表格来表示：</p>
+<table>
+<thead>
+<tr>
+<th>发明人数</th>
+<th>阶段</th>
+<th>任务</th>
+<th>举例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>10000-1000</td>
+<td>思考可能性</td>
+<td>意识到实现机会</td>
+<td>我们应该用电照明</td>
+</tr>
+<tr>
+<td>1000</td>
+<td>如何实现</td>
+<td>设想方案的关键因素</td>
+<td>密封玻璃泡内的白炽金属丝</td>
+</tr>
+<tr>
+<td>100</td>
+<td>具体细节</td>
+<td>选择具体实现方案</td>
+<td>焊成一体的钨丝</td>
+</tr>
+<tr>
+<td>10</td>
+<td>工作设备</td>
+<td>证明解决方案的确可行</td>
+<td>斯旺、拉迪莫、戴维等人的电灯泡样机</td>
+</tr>
+<tr>
+<td>1</td>
+<td>实际应用</td>
+<td>说服世界接受你的成果</td>
+<td>爱迪生的灯泡</td>
+</tr>
+</tbody></table>
+<p>另外，还有诸多证据证明，技术的发展是完美的遵循特定规律的：DNA排序、磁存储器、半导体、通信带宽和像素密度的发展曲线（实际上是近乎完美的（幂次）直线）都遵循完美的幂次法则。</p>
+<p><img src="/home/fang/Blog/(2021)gary8682_next_theme/source/_posts/images/%E6%8A%80%E6%9C%AF%E6%98%AF%E4%BB%80%E4%B9%88_1.jpg" alt="各个领域中的“摩尔定律”"></p>
+<h3 id="四、技术是逆熵力量"><a href="#四、技术是逆熵力量" class="headerlink" title="四、技术是逆熵力量"></a>四、技术是逆熵力量</h3><blockquote>
+<p>大多数氢原子在时间的起点就诞生了，它们本身和时间一样古老。大爆炸的高温创造出氢原子，并使它们以均匀的热雾形式扩散至整个宇宙。从那时起，每个原子就踏上了孤独之旅。当一个氢原子无知无觉地漂浮在广袤宇宙、距离同伴成百上千公里时，它比四周的真空活跃不了多少。没有变化，时间是无意义的，99.99％的宇宙空间只有极小的变化。</p>
+<p>10亿年后，某个氢原子也许被吸入某个凝固星系的重力场。伴随着最模糊的时间和变化的迹象，这个氢原子朝稳定的方向飘动，靠近其他物质。下一个10亿年，它突然撞入遇到的第一块小物体。数百万年后，又遇到第二块。一段时间后，它遇到自己的同类，另一个氢原子。它们在微弱的引力作用下一起漂浮，经过漫长的岁月，遇见了一个氧原子。突然，奇怪的事情发生了。瞬间高温让它们聚成一个水分子，接着也许被吸入某个星球的大气环流。在融合状态下，它们被卷入宇宙变化的大循环中。很快这个水分子被裹挟到雨团中，落至地面的水池里，与其他相互冲撞的原子汇聚在一起。它与不计其数的同伴一起，在数百万年的时光里一遍又一遍地经历这个循环——从拥挤的水池到大片的云朵，然后又回到池中。一天，一个偶然的机会，水分子被某个水池里异常活跃的碳链捕获，生命历程又一次得以加速。它在一个简单的循环中转圈，帮助碳链传播。疾速运动以及经历在死气沉沉的宇宙空间不可能出现的变化让它感到欢乐。碳链中的水分子被其他碳链偷走，经过多次重新装配，最后氢原子发现自己处于细胞中，不断改变与其他分子的关系和结合力。现在它绝大多数时候都在变化着，不停地与外界互动。</p>
+<p>人体内的氢原子每7年完全更新一次。等到上了年纪，我们就是一条由大批老原子汇成的河流。我们体内的碳元素来自星尘。手掌、皮肤、眼睛和心脏的主要物质都形成于时间的起点，也就是数十亿年前。我们的真实年龄要比外表看起来大得多。<br>对于我们体内的普通氢原子而言，花费几年时间从一个细胞驻地飞奔至下一个，这将是我们能想象到它们所实现的最短暂的壮举。140亿年保持安静，然后来一次狂野的短暂旅行，穿越生命之水，接着，当所在的星球毁灭后，又回归宇宙的隔绝状态。用转瞬即逝来形容这次旅程都会显得太长。从原子的视角看，任何活着的有机体都是旋风，会将它卷入疯狂的混乱和有序中，让它享受140亿年一次的狂欢。</p>
+</blockquote>
+<p>这里我又忍不住谈论：地球上的生命为什么会产生。</p>
+<p>其实这一点，你球人也不太清楚。但是有两种被广泛认同的可能性：两总海底烟囱，正好一黑一白，一酸一碱，一个仿佛天堂，一个像是地狱之门。</p>
+<p>黑烟囱的周围，四处充斥着硫磺，污浊恶臭的硫化氢蒸气则从各处袅袅冒出。也只有在老天爷头脑混乱的时候才会想出那些既没有嘴巴也没有肛门的巨大管虫以及在烟囱下成群结队像蝗虫大军一样怪异的无眼虾。在这里的生命不光忍受着地狱般的生活，而且无法离开这里而活，它们根本是依靠这环境而兴盛，（让人联想到DOOM(毁灭战士)中描述的场景，如果你没玩过，当我没说）。</p>
+<p>白烟囱实际上是一个热泉，像是亚特兰帝斯的失落之城。精美的白色柱状与手指状的碳酸盐柱群，在漆黑的深海里向上伸展。这些手指般的白柱像华丽雕饰的哥特式建筑，用英国作家约翰·尤利乌斯·诺维奇的话来说：”充满空洞的图案“。这里冒出的热泉是无色的，所以真的给人一种错觉，似乎整个城市被瞬间抛弃，只剩那些难解的哥特式华丽建筑被完整保存下来。硫化铁堆积起来的空洞周围，生活着无数晶莹剔透的小生物。</p>
+<p>这里不讨论生物具体靠这两种烟囱周围的哪些物质与持续发生的化学反映而繁荣（主要是我一文科生也不知道）。但是你要知道，生命的产生，靠的是地球强大内能与海水两种截然不同的世界的交界处的不平衡。能量从高处流往低处，有势差存在，就有生命产生的可能。没有势差的世界中，就是一片热寂。</p>
+<p>文明，社会，生命，以及我们的技术，都靠着捕捉到的能量势差而产生的。她们诞生与不平衡之中，也将维持着宇宙的不平衡。她们都会产生熵的反向运动，被称为负熵。</p>
+<p>负熵，甚至信息的定义都是模糊的（我不是指字典上人工强行赋予的定义）。在《复杂》一书中，甚至列出了不同领域的学者所认同的几十种不同的定义。所以我们只用模糊的定义来讨论这个问题。但可以确定的是，物质、能量与信息，是宇宙的三种基本元素，而负熵则是信息缓慢而有序的积累。    </p>
+<p>技术，正是降低熵的方法。自然界积累的基因知识库作为工具来降低熵，而人类同够自己的方式储存信息。每年由人类技术产生的信息量增长60%，其增长率压倒性地超过了自然界储存信息的技术的增长。在熵降低的过程中，信息和技术的重要性终将超过能量和物质，因为物质与能量本身并不能摆脱热力学第二定律的束缚，显然只有信息才能带来秩序和进步。</p>
+<p>这让我想到游戏<em>RYSE, SON OF ROME</em>中，你扮演的主角面对蛮族入侵的战吼*:”Rome is power, Rome is civilization, Rome is ORDER! RYSE! SON OF ROME!”* 是的，罗马是秩序的象征。我们更加强调罗马的秩序性，强调罗马的文明性，罗马对蛮族的抵御，就像是宇宙中技术、生命与信息对熵的抵御。</p>
+<p>技术的最终使命，是用超越物质与能量本身的神奇力量，保护秩序免受熵的侵蚀。</p>
+<h3 id="五、组合与结构-未完成"><a href="#五、组合与结构-未完成" class="headerlink" title="五、组合与结构 未完成"></a>五、组合与结构 未完成</h3><h4 id="1-技术的分类与相关定义"><a href="#1-技术的分类与相关定义" class="headerlink" title="1. 技术的分类与相关定义"></a>1. 技术的分类与相关定义</h4><p>首先是组合进化(combinatorial evolution)的定义：之前的技术形式被作为现在原创技术的组分，当代的新技术成为建构更新的技术的可能的组分。反过来，其中的部分技术将继续变成那些尚未实现的新技术的可能的构件。慢慢地，最初很简单的技术发展出越来越多的技术形式，而很复杂的技术往往用很简单的技术作为其组分。所有技术的集合自力更生地从无到有，从简单到复杂地成长起来了。我们可以说技术从自身创生了自身。· 技术是实现人的目的的一种手段：这种机制便是组合进化。</p>
+<p><strong>分类方法1：</strong></p>
+<p>· 技术是实现人的目的的一种手段：从这个视角上来讲，技术是有一定的主观性的，也就是说技术的进化方向，是有意识的。技术要满足人的目的，就要将物质组合成为能够带来熵减的状态。</p>
+<p>· 技术是实践和元器件的集成。</p>
+<p>· 技术是在某种文化中得以运用的装置和工程实践的集合。</p>
+<p><strong>分类方法2：</strong> 这三个定义实际上是从三个角度来定义的，互相并不重叠。每个范畴下都对应着不同口径的技术：</p>
+<p>· 单数意义上的技术(technology-singular)，例如蒸汽机，是作为一个新的概念产生并具有线性的发展形态，通过改变内部构件而</p>
+<p>· 其次是负数意义上的技术(technology-plural)，例如电力，电力技术通常是依靠于（非其自身的）器件和器械构建起来的，通过改变组成构件而发展。</p>
+<p>· 最后是广义、一般意义的技术(technology-general)。</p>
+<p><strong>分类方法3：</strong></p>
+<p>这种分类方法较为粗略：技术可以是装置、方法和流程三者中的一个。有时候我们可以把技术看作一个可执行(executable)的脚本，就像是Factorio（一个游戏）里的蓝图一样，当一项技术被激活以后，都会完成一定的任务，不管它是装置、方法还是流程。其实这三者之间也是可以相互转换的，也就是说装置的制作方法实际上也是一种方法和流程，使用装置的过程实际上也是一种方法和流程。</p>
+<h4 id="2-技术结构的形成"><a href="#2-技术结构的形成" class="headerlink" title="2. 技术结构的形成"></a>2. 技术结构的形成</h4><p>技术的最基本结构，包含一个用来执行基本功能的主集和一个支持性的次集。换句话说，技术由实现核心功能的部分和辅助系统形成。</p>
+<p>另外，技术通常是模块化的，技术的模块化可以带来更强的适应性，同时简化了设计过程。但是只有当技术使用的次数足够多的时候，我们才值得将技术模块化。</p>
+<p>最后，技术的结构具有递归性，换句话说，技术具有自相似性。技术包含着技术，直到最基础的水平。在布来恩-阿瑟的书中，作者将技术的每一个层级都起了名字，比如main assemblies, sub-assemblies, functional components等。但是我觉得这种分类是没有必要的，我们只需要知道，技术是由不同层级构成的就可以。</p>
+<p>况且，技术的等级是完全流动的，比如一个舰載机在航母上，只是作为一个独立的部分。当其编队飞行时，又成了技术的最高层级。另外，技术一定是以一定的尺度呈现出来的，比如“纯氧炼钢法”是以工厂的形式呈现出来的，而“移动通讯工具”是由手持设备体现出来的。</p>
+<p>（暂时先写到这吧。）</p>
+
+    </div>
+
+    
+    
+    
+        
+
+  <div class="followme">
+    <p>Welcome to my other publishing channels</p>
+
+    <div class="social-list">
+
+        <div class="social-item">
+          <a target="_blank" class="social-link" href="https://t.me/Gary8682Blog">
+            <span class="icon">
+              <i class="fab fa-telegram"></i>
+            </span>
+
+            <span class="label">Telegram</span>
+          </a>
+        </div>
+    </div>
+  </div>
+
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E9%95%BF%E6%9C%9F%E6%9C%AA%E5%AE%8C%E6%88%90/" rel="tag"># 长期未完成</a>
+              <a href="/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/" rel="tag"># 读书笔记</a>
+              <a href="/tags/VC-PE/" rel="tag"># VC/PE</a>
+              <a href="/tags/%E4%BA%A7%E4%B8%9A/" rel="tag"># 产业</a>
+              <a href="/tags/%E5%A4%8D%E6%9D%82%E6%80%A7%E7%A7%91%E5%AD%A6/" rel="tag"># 复杂性科学</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2021/02/09/%5B%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0%5D%E6%80%A7/" rel="prev" title="性：荒谬的存在">
+      <i class="fa fa-chevron-left"></i> 性：荒谬的存在
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2021/02/14/K%E7%BA%BF%E7%9A%84%E6%9C%AC%E8%B4%A8/" rel="next" title="K线的本质">
+      K线的本质 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+    <div class="comments" id="valine-comments"></div>
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%8A%80%E6%9C%AF%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9F-%E6%9C%AA%E5%AE%8C%E6%88%90"><span class="nav-number">1.</span> <span class="nav-text">技术是什么？ 未完成</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%80%E3%80%81%E4%B8%BA%E4%BB%80%E4%B9%88%E9%80%89%E6%8B%A9%E6%8A%80%E6%9C%AF%E5%86%B3%E5%AE%9A%E8%AE%BA%E8%A7%86%E8%A7%92"><span class="nav-number">1.0.1.</span> <span class="nav-text">一、为什么选择技术决定论视角</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BA%8C%E3%80%81%E9%97%AE%E9%A2%98-%E6%9C%AA%E5%AE%8C%E6%88%90"><span class="nav-number">1.0.2.</span> <span class="nav-text">二、问题 未完成</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%89%E3%80%81%E6%8A%80%E6%9C%AF%E5%BF%85%E7%84%B6%E7%9A%84%E5%8F%91%E5%B1%95%E6%96%B9%E5%90%91-%E6%9C%AA%E5%AE%8C%E6%88%90"><span class="nav-number">1.0.3.</span> <span class="nav-text">三、技术必然的发展方向 未完成</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%9B%9B%E3%80%81%E6%8A%80%E6%9C%AF%E6%98%AF%E9%80%86%E7%86%B5%E5%8A%9B%E9%87%8F"><span class="nav-number">1.0.4.</span> <span class="nav-text">四、技术是逆熵力量</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BA%94%E3%80%81%E7%BB%84%E5%90%88%E4%B8%8E%E7%BB%93%E6%9E%84-%E6%9C%AA%E5%AE%8C%E6%88%90"><span class="nav-number">1.0.5.</span> <span class="nav-text">五、组合与结构 未完成</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-%E6%8A%80%E6%9C%AF%E7%9A%84%E5%88%86%E7%B1%BB%E4%B8%8E%E7%9B%B8%E5%85%B3%E5%AE%9A%E4%B9%89"><span class="nav-number">1.0.5.1.</span> <span class="nav-text">1. 技术的分类与相关定义</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-%E6%8A%80%E6%9C%AF%E7%BB%93%E6%9E%84%E7%9A%84%E5%BD%A2%E6%88%90"><span class="nav-number">1.0.5.2.</span> <span class="nav-text">2. 技术结构的形成</span></a></li></ol></li></ol></li></ol></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">郭放</p>
+  <div class="site-description" itemprop="description">身居猪圈，仰望星空。</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">17</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+        <span class="site-state-item-count">7</span>
+        <span class="site-state-item-name">categories</span>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">20</span>
+        <span class="site-state-item-name">tags</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="sidebar-button motion-element"><i class="fa fa-comment"></i>
+    Chat
+  </a>
+  </div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/Gary8682" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;Gary8682" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="/guofang8682@gmail.com" title="E-Mail → guofang8682@gmail.com"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://stackexchange.com/users/12930934/fang-guo" title="StackOverflow → https:&#x2F;&#x2F;stackexchange.com&#x2F;users&#x2F;12930934&#x2F;fang-guo" rel="noopener" target="_blank"><i class="fab fa-stack-overflow fa-fw"></i>StackOverflow</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://www.reddit.com/user/Gary8682" title="Reddit → https:&#x2F;&#x2F;www.reddit.com&#x2F;user&#x2F;Gary8682" rel="noopener" target="_blank"><i class="fab fa-skype fa-fw"></i>Reddit</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://t.me/Junping_Xu" title="Telegram → https:&#x2F;&#x2F;t.me&#x2F;Junping_Xu" rel="noopener" target="_blank"><i class="fab fa-skype fa-fw"></i>Telegram</a>
+      </span>
+  </div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 2017 – 
+  <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">郭放</span>
+</div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+
+<script>
+NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
+  NexT.utils.getScript('//unpkg.com/valine/dist/Valine.min.js', () => {
+    var GUEST = ['nick', 'mail', 'link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item => {
+      return GUEST.includes(item);
+    });
+    new Valine({
+      el         : '#valine-comments',
+      verify     : false,
+      notify     : false,
+      appId      : 'lSbuwPbhjhckeoOLPpXuWvER-gzGzoHsz',
+      appKey     : 'IlVw4rgQ9VFotOGReFjrOCgn',
+      placeholder: "在此输入给郭放的评论",
+      avatar     : 'mm',
+      meta       : guest,
+      pageSize   : '10' || 10,
+      visitor    : false,
+      lang       : '' || 'zh-cn',
+      path       : location.pathname,
+      recordIP   : false,
+      serverURLs : ''
+    });
+  }, window.Valine);
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.3.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"fang.bio","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"always","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+  </script>
+
+  <meta name="description" content="波动与风险的源头不同：金融资产的内在特征决定了它的风险，市场上所有交易者的行为决定了金融资产的波动。波动率是流动性的反向指标，而后者又是市场平稳运行和资产价格定价的基础。 “波动率”是华尔街的惯用语，交易员、投资者和媒体都频频抛出这个词语，就好像所有人都理解它的定义一样。 波动率的教科书定义波动率是衡量收益率围绕均值离散程度的一种指标。离散程度越高，波动率越高，最终潜在收益的范围也越大。 波动率通">
+<meta property="og:type" content="article">
+<meta property="og:title" content="波动率不代表风险（二） Volatility is not Risk II">
+<meta property="og:url" content="http://fang.bio/2021/03/18/%E4%B8%BA%E4%BB%80%E4%B9%88%E6%B3%A2%E5%8A%A8%E7%8E%87%E4%B8%8D%E4%BB%A3%E8%A1%A8%E9%A3%8E%E9%99%A9%EF%BC%88%E4%BA%8C%EF%BC%89/index.html">
+<meta property="og:site_name" content="郭放的博客">
+<meta property="og:description" content="波动与风险的源头不同：金融资产的内在特征决定了它的风险，市场上所有交易者的行为决定了金融资产的波动。波动率是流动性的反向指标，而后者又是市场平稳运行和资产价格定价的基础。 “波动率”是华尔街的惯用语，交易员、投资者和媒体都频频抛出这个词语，就好像所有人都理解它的定义一样。 波动率的教科书定义波动率是衡量收益率围绕均值离散程度的一种指标。离散程度越高，波动率越高，最终潜在收益的范围也越大。 波动率通">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2021-03-18T04:49:56.686Z">
+<meta property="article:modified_time" content="2021-03-24T00:00:09.140Z">
+<meta property="article:author" content="郭放">
+<meta property="article:tag" content="交易">
+<meta property="article:tag" content="价值投资">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="http://fang.bio/2021/03/18/%E4%B8%BA%E4%BB%80%E4%B9%88%E6%B3%A2%E5%8A%A8%E7%8E%87%E4%B8%8D%E4%BB%A3%E8%A1%A8%E9%A3%8E%E9%99%A9%EF%BC%88%E4%BA%8C%EF%BC%89/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'en'
+  };
+</script>
+
+  <title>波动率不代表风险（二） Volatility is not Risk II | 郭放的博客</title>
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-105594018-1"></script>
+    <script>
+      if (CONFIG.hostname === location.hostname) {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-105594018-1');
+      }
+    </script>
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+<!-- hexo injector head_end start -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
+<!-- hexo injector head_end end --></head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">郭放的博客</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">Gary8682's Blog</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives</a>
+
+  </li>
+        <li class="menu-item menu-item-commonweal">
+
+    <a href="/404/" rel="section"><i class="fa fa-heartbeat fa-fw"></i>Commonweal 404</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://fang.bio/2021/03/18/%E4%B8%BA%E4%BB%80%E4%B9%88%E6%B3%A2%E5%8A%A8%E7%8E%87%E4%B8%8D%E4%BB%A3%E8%A1%A8%E9%A3%8E%E9%99%A9%EF%BC%88%E4%BA%8C%EF%BC%89/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="郭放">
+      <meta itemprop="description" content="身居猪圈，仰望星空。">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="郭放的博客">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          波动率不代表风险（二） Volatility is not Risk II
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2021-03-18 12:49:56" itemprop="dateCreated datePublished" datetime="2021-03-18T12:49:56+08:00">2021-03-18</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2021-03-24 08:00:09" itemprop="dateModified" datetime="2021-03-24T08:00:09+08:00">2021-03-24</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E6%8A%95%E8%B5%84/" itemprop="url" rel="index"><span itemprop="name">投资</span></a>
+                </span>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine: </span>
+    
+    <a title="valine" href="/2021/03/18/%E4%B8%BA%E4%BB%80%E4%B9%88%E6%B3%A2%E5%8A%A8%E7%8E%87%E4%B8%8D%E4%BB%A3%E8%A1%A8%E9%A3%8E%E9%99%A9%EF%BC%88%E4%BA%8C%EF%BC%89/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2021/03/18/%E4%B8%BA%E4%BB%80%E4%B9%88%E6%B3%A2%E5%8A%A8%E7%8E%87%E4%B8%8D%E4%BB%A3%E8%A1%A8%E9%A3%8E%E9%99%A9%EF%BC%88%E4%BA%8C%EF%BC%89/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>波动与风险的源头不同：金融资产的内在特征决定了它的<strong>风险</strong>，市场上所有交易者的行为决定了金融资产的<strong>波动</strong>。波动率是流动性的反向指标，而后者又是市场平稳运行和资产价格定价的基础。</p>
+<p>“<a target="_blank" rel="noopener" href="https://cn.investing.com/indices/volatility-s-p-500">波动率</a>”是华尔街的惯用语，交易员、投资者和媒体都频频抛出这个词语，就好像所有人都理解它的定义一样。</p>
+<h4 id="波动率的教科书定义"><a href="#波动率的教科书定义" class="headerlink" title="波动率的教科书定义"></a>波动率的教科书定义</h4><p>波动率是衡量收益率围绕均值离散程度的一种指标。离散程度越高，波动率越高，最终潜在收益的范围也越大。</p>
+<p>波动率通常以+/-1标准差来表示。例如，14%的年化波动率意味着，有68%的把握预期年化收益率为+/-14%。波动率公式体现在图表上是一条正态分布的钟形曲线，这当中的价格变化是受限的。</p>
+<h4 id="正态分布并非现实情况"><a href="#正态分布并非现实情况" class="headerlink" title="正态分布并非现实情况"></a>正态分布并非现实情况</h4><p>钟形曲线正态分布的这个假设是金融市场的核心。这个假设包含了众多前提，比如：市场参与者是理性的，市场具有高效率。这种假设也发展出了风险管理、期权定价以及其他许多经济和市场理论。这种分析的问题在于，假设过于严苛，以至于从中推导出的结果通常是错误的。</p>
+<p>在一个正态分布的曲线中，标普500指数绝对不会向上或向下移动超过五个标准差。这里的 “绝对不会”，是指350万个交易日（约1.4万年）的间隔内。然而，自1970年以来，标普500已有34个交易日移动超过五个标准差。仅在2020年3月，就有7个。这说明用正态分布显然没有考虑巨大的尾部风险。</p>
+<p>在现代风险管理体系中，几乎所有风险度量模型都是建立在简单而明显错误的正态分布上的。</p>
+<p>金融理论体系在这个简单的假设上建立了太多错误的模型，虽然大多数把正态分布作为根据的模型都有更符合显示的改进版本，比如VaR的改进版本co-VaR模型就能够很好地计量尾部风险，但是建立在正态分布基础上的模型依然被广泛使用（实际上在现代风控体系中VaR模型的重要程度远远高于co-VaR模型，后者很少在风控工作中使用）。</p>
+<h4 id="使用波动率定义风险"><a href="#使用波动率定义风险" class="headerlink" title="使用波动率定义风险"></a>使用波动率定义风险</h4><p>投资者经常使用波动率来定义风险。例如，使用1970年的标普500数据，投资者可以有95%的把握假定他们在任何一天的损失都不会超过2.16%。通过对波动率进行年化处理，我们可以制定长期风险的衡量指标。</p>
+<p>使用波动率度量风险有两方面的错误：</p>
+<ol>
+<li><strong>风险与波动率产生的原因不一样。正如上一篇文章所强调的，金融资产的内在特征决定了它的风险，市场上所有交易者的行为决定了金融资产的波动。</strong></li>
+<li>使用波动率定义风险会忽视尾部风险。</li>
+</ol>
+<h4 id="流动性和波动率"><a href="#流动性和波动率" class="headerlink" title="流动性和波动率"></a>流动性和波动率</h4><p>现在，让我们抛掉钟形曲线和复杂的统计数字，用更简单和实用的方式重新定义波动率。</p>
+<p>根据统计学者托德·哈里森（Todd Harrison）的说法，<strong>“按照定义，波动率就是流动性的反面。”</strong></p>
+<p>托德的意思是：</p>
+<p>市场A的买卖双方愿意当前价格附近较为相近的价格偏差执行股票交易。</p>
+<p>市场B几乎没有愿意执行交易的买卖双方。他们的出价和报价规模都比较小，并且相较于当前价格的偏差也不集中。</p>
+<p>市场A将以某种有序的方式小幅地上下波动。</p>
+<p>市场B会以更大的幅度上下波动，因为买卖双方如果想立即执行交易，就必须在价格上放宽标准。</p>
+<p>市场A比市场B更具流动性。因此，A的波动性也将小于B。</p>
+<p>流动性是动态变化的。例如，如果市场信心减弱并且不确定性增加，则市场A的流动性状况将迅速恶化，变得更像市场B。这种情况会导致出价和报价失衡，市场清算的价格也变得不那么清晰。</p>
+<p>结果是，随着潜在买家的离场，价格形成“缺口”或下降。找不到需求的卖家开始恐慌，急于定下一个能够达成交易的价格。换句话说，当市场缺乏流动性时，波动率就会飙升。相反，当市场的买价和卖价都均衡集中在一个共同价格附近时，波动率较低且稳定。</p>
+<h4 id="波动率的驱动力——对损失的恐惧"><a href="#波动率的驱动力——对损失的恐惧" class="headerlink" title="波动率的驱动力——对损失的恐惧"></a>波动率的驱动力——对损失的恐惧</h4><blockquote>
+<p>价吸引买家。低价吸引卖家。”</p>
+<p>​                    拉里·麦卡锡（Larry McCarthy）</p>
+</blockquote>
+<p><strong>从行为模式上讲，卖家往往比买家更加不理性。实际上，当恐惧情绪和不确定性增加时，流动性就会消失。</strong></p>
+<p>恐惧情绪对市场的短期影响远大于贪婪情绪。行为研究表明，投资者做出非理性决策时，更多是出于保护目的，而不是回报目的。例如，如果在直接获得90美元以及有90%的机会获得100美元之间进行选择，大多数人不会冒险，而选择直接获得90美元。从数学的角度看，这两种情况的预期结果都是90美元，但大多数人都选择避免一无所获的风险。</p>
+<p>恐惧情绪，或者说亏损的风险，比贪婪情绪更能推动市场走势。贪婪情绪需要时间来酝酿。而恐惧则会突然出现，没有任何预警。</p>
+
+    </div>
+
+    
+    
+    
+        
+
+  <div class="followme">
+    <p>Welcome to my other publishing channels</p>
+
+    <div class="social-list">
+
+        <div class="social-item">
+          <a target="_blank" class="social-link" href="https://t.me/Gary8682Blog">
+            <span class="icon">
+              <i class="fab fa-telegram"></i>
+            </span>
+
+            <span class="label">Telegram</span>
+          </a>
+        </div>
+    </div>
+  </div>
+
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E4%BA%A4%E6%98%93/" rel="tag"># 交易</a>
+              <a href="/tags/%E4%BB%B7%E5%80%BC%E6%8A%95%E8%B5%84/" rel="tag"># 价值投资</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2021/03/18/%E8%AF%81%E5%88%B8%E5%88%86%E6%9E%90%20%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/" rel="prev" title="证券分析 读书笔记">
+      <i class="fa fa-chevron-left"></i> 证券分析 读书笔记
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2021/05/08/%E4%BC%B0%E5%80%BC%E4%B8%8E%E6%95%85%E4%BA%8B/" rel="next" title="估值与故事 读书笔记">
+      估值与故事 读书笔记 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+    <div class="comments" id="valine-comments"></div>
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%B3%A2%E5%8A%A8%E7%8E%87%E7%9A%84%E6%95%99%E7%A7%91%E4%B9%A6%E5%AE%9A%E4%B9%89"><span class="nav-number">1.</span> <span class="nav-text">波动率的教科书定义</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%AD%A3%E6%80%81%E5%88%86%E5%B8%83%E5%B9%B6%E9%9D%9E%E7%8E%B0%E5%AE%9E%E6%83%85%E5%86%B5"><span class="nav-number">2.</span> <span class="nav-text">正态分布并非现实情况</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%BD%BF%E7%94%A8%E6%B3%A2%E5%8A%A8%E7%8E%87%E5%AE%9A%E4%B9%89%E9%A3%8E%E9%99%A9"><span class="nav-number">3.</span> <span class="nav-text">使用波动率定义风险</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%B5%81%E5%8A%A8%E6%80%A7%E5%92%8C%E6%B3%A2%E5%8A%A8%E7%8E%87"><span class="nav-number">4.</span> <span class="nav-text">流动性和波动率</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%B3%A2%E5%8A%A8%E7%8E%87%E7%9A%84%E9%A9%B1%E5%8A%A8%E5%8A%9B%E2%80%94%E2%80%94%E5%AF%B9%E6%8D%9F%E5%A4%B1%E7%9A%84%E6%81%90%E6%83%A7"><span class="nav-number">5.</span> <span class="nav-text">波动率的驱动力——对损失的恐惧</span></a></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">郭放</p>
+  <div class="site-description" itemprop="description">身居猪圈，仰望星空。</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">17</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+        <span class="site-state-item-count">7</span>
+        <span class="site-state-item-name">categories</span>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">20</span>
+        <span class="site-state-item-name">tags</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="sidebar-button motion-element"><i class="fa fa-comment"></i>
+    Chat
+  </a>
+  </div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/Gary8682" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;Gary8682" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="/guofang8682@gmail.com" title="E-Mail → guofang8682@gmail.com"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://stackexchange.com/users/12930934/fang-guo" title="StackOverflow → https:&#x2F;&#x2F;stackexchange.com&#x2F;users&#x2F;12930934&#x2F;fang-guo" rel="noopener" target="_blank"><i class="fab fa-stack-overflow fa-fw"></i>StackOverflow</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://www.reddit.com/user/Gary8682" title="Reddit → https:&#x2F;&#x2F;www.reddit.com&#x2F;user&#x2F;Gary8682" rel="noopener" target="_blank"><i class="fab fa-skype fa-fw"></i>Reddit</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://t.me/Junping_Xu" title="Telegram → https:&#x2F;&#x2F;t.me&#x2F;Junping_Xu" rel="noopener" target="_blank"><i class="fab fa-skype fa-fw"></i>Telegram</a>
+      </span>
+  </div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 2017 – 
+  <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">郭放</span>
+</div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+
+<script>
+NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
+  NexT.utils.getScript('//unpkg.com/valine/dist/Valine.min.js', () => {
+    var GUEST = ['nick', 'mail', 'link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item => {
+      return GUEST.includes(item);
+    });
+    new Valine({
+      el         : '#valine-comments',
+      verify     : false,
+      notify     : false,
+      appId      : 'lSbuwPbhjhckeoOLPpXuWvER-gzGzoHsz',
+      appKey     : 'IlVw4rgQ9VFotOGReFjrOCgn',
+      placeholder: "在此输入给郭放的评论",
+      avatar     : 'mm',
+      meta       : guest,
+      pageSize   : '10' || 10,
+      visitor    : false,
+      lang       : '' || 'zh-cn',
+      path       : location.pathname,
+      recordIP   : false,
+      serverURLs : ''
+    });
+  }, window.Valine);
+});
+</script>
+
+</body>
+</html>
