@@ -188,6 +188,162 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://www.fang.bio/2021/05/12/%E5%85%B3%E4%BA%8E%E8%B5%84%E6%9C%AC%E6%88%90%E6%9C%AC/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="郭放">
+      <meta itemprop="description" content="身居猪圈，仰望星空。<br /> From Soil to Stars">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="郭放的博客">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2021/05/12/%E5%85%B3%E4%BA%8E%E8%B5%84%E6%9C%AC%E6%88%90%E6%9C%AC/" class="post-title-link" itemprop="url">关于资本成本</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2021-05-12 11:09:45" itemprop="dateCreated datePublished" datetime="2021-05-12T11:09:45+08:00">2021-05-12</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2021-08-15 18:24:30" itemprop="dateModified" datetime="2021-08-15T18:24:30+08:00">2021-08-15</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E4%BC%B0%E5%80%BC/" itemprop="url" rel="index"><span itemprop="name">估值</span></a>
+                </span>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine: </span>
+    
+    <a title="valine" href="/2021/05/12/%E5%85%B3%E4%BA%8E%E8%B5%84%E6%9C%AC%E6%88%90%E6%9C%AC/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2021/05/12/%E5%85%B3%E4%BA%8E%E8%B5%84%E6%9C%AC%E6%88%90%E6%9C%AC/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p><code>这是一篇长期未完成的文章，当我认为我对于“计算资本成本”这个问题有新的认知的时候，会回来把这篇文章改一改。希望几年后这篇文章能作为一个成熟的方法论而存在</code></p>
+<p>估值中，估计资本成本是一件很重要的事情。</p>
+<p>定义价值创造的方法有很多。在进行并购交易和其他我不太了解的交易形式时，会有其他理由使得CAPM不适用与估计资本成本。我倾向于从现金流的角度，讲“资本的收益大于资本的（机会）成本”的部分，看做是资本的收益。</p>
+<p>在Ibbotson SBBI 2013 Valuation Yearbook中，认为可以从三个角度来看资本成本：</p>
+<p>​    从公司的资产来看，是一个在贴现现金流的时候，用到的贴现率，强调这是估值的时候用的一个数字。</p>
+<p>​    从公司的负债来看，是一家公司在具体的竞争背景下保留资本的经济成本（这个我也没搞太懂）</p>
+<p>​    从投资者的角度来看，是投资者所要求的回报率，或者说是投资者的机会成本。</p>
+<h2 id="负债成本"><a href="#负债成本" class="headerlink" title="负债成本"></a>负债成本</h2><p>一家公司的负债成本通常是它的税后利息，这里假设公司是盈利的，所以利息费用能够被扣除。</p>
+<p>通常来讲，负债成本分为一下几种：无风险利率、其他的政府债务票据、较高等级的公司债券、较低等级的公司债券、贷发给非上市公司的有担保贷款、贷方给非上市公司的无担保贷款。从前到后，利率依次增大。</p>
+<h2 id="权益成本"><a href="#权益成本" class="headerlink" title="权益成本"></a>权益成本</h2><h3 id="为什么书上不用简单的CAPM"><a href="#为什么书上不用简单的CAPM" class="headerlink" title="为什么书上不用简单的CAPM"></a>为什么书上不用简单的CAPM</h3><p>之前我一直简单粗暴地用CAPM来确定资本成本，四月份参加华为的那个比赛的时候也是，后来意识到，这大错特错（还好评委没有在比赛中支出我的错误，而且别人也是这么写的），因为CAPM的假设实在是太多了，如下(从MBA智库百科复制粘贴的）：</p>
+<blockquote>
+<p>1、投资者希望财富越多愈好，效用是财富的函数，财富又是<a target="_blank" rel="noopener" href="https://wiki.mbalib.com/wiki/%E6%8A%95%E8%B5%84%E6%94%B6%E7%9B%8A%E7%8E%87">投资收益率</a>的函数，因此可以认为效用为收益率的函数。</p>
+<p>2、投资者能事先知道<a target="_blank" rel="noopener" href="https://wiki.mbalib.com/wiki/%E6%8A%95%E8%B5%84%E6%94%B6%E7%9B%8A%E7%8E%87">投资收益率</a>的<a target="_blank" rel="noopener" href="https://wiki.mbalib.com/wiki/%E6%A6%82%E7%8E%87%E5%88%86%E5%B8%83">概率分布</a>为<a target="_blank" rel="noopener" href="https://wiki.mbalib.com/wiki/%E6%AD%A3%E6%80%81%E5%88%86%E5%B8%83">正态分布</a>。</p>
+<p>3、<a target="_blank" rel="noopener" href="https://wiki.mbalib.com/wiki/%E6%8A%95%E8%B5%84%E9%A3%8E%E9%99%A9">投资风险</a>用投资收益率的<a target="_blank" rel="noopener" href="https://wiki.mbalib.com/wiki/%E6%96%B9%E5%B7%AE">方差</a>或标准差标识。</p>
+<p>4、影响投资决策的主要因素为<a target="_blank" rel="noopener" href="https://wiki.mbalib.com/wiki/%E6%9C%9F%E6%9C%9B%E6%94%B6%E7%9B%8A%E7%8E%87">期望收益率</a>和风险两项。</p>
+<p>5、投资者都遵守主宰原则(Dominance rule)，即同一风险水平下，选择收益率较高的证券；同一收益率水平下，选择风险较低的证券。投资者能事先知道<a target="_blank" rel="noopener" href="https://wiki.mbalib.com/wiki/%E6%8A%95%E8%B5%84%E6%94%B6%E7%9B%8A%E7%8E%87">投资收益率</a>的<a target="_blank" rel="noopener" href="https://wiki.mbalib.com/wiki/%E6%A6%82%E7%8E%87%E5%88%86%E5%B8%83">概率分布</a>为<a target="_blank" rel="noopener" href="https://wiki.mbalib.com/wiki/%E6%AD%A3%E6%80%81%E5%88%86%E5%B8%83">正态分布</a>。</p>
+<p><strong>CAPM的附加假设条件：</strong></p>
+<p>6、可以在无风险<a target="_blank" rel="noopener" href="https://wiki.mbalib.com/wiki/%E6%8A%98%E7%8E%B0%E7%8E%87">折现率</a>R的水平下无限制地借入或贷出资金。</p>
+<p>7、所有投资者对证券收益率<a target="_blank" rel="noopener" href="https://wiki.mbalib.com/wiki/%E6%A6%82%E7%8E%87%E5%88%86%E5%B8%83">概率分布</a>的看法一致，因此市场上的效率边界只有一条。</p>
+<p>8、所有投资者具有相同的<a target="_blank" rel="noopener" href="https://wiki.mbalib.com/wiki/%E6%8A%95%E8%B5%84%E6%9C%9F%E9%99%90">投资期限</a>，而且只有一期。</p>
+<p>9、所有的<a target="_blank" rel="noopener" href="https://wiki.mbalib.com/wiki/%E8%AF%81%E5%88%B8%E6%8A%95%E8%B5%84">证券投资</a>可以无限制的细分，在任何一个<a target="_blank" rel="noopener" href="https://wiki.mbalib.com/wiki/%E6%8A%95%E8%B5%84%E7%BB%84%E5%90%88">投资组合</a>里可以含有非整数股份。</p>
+<p>10、买卖证券时没有<a target="_blank" rel="noopener" href="https://wiki.mbalib.com/wiki/%E7%A8%8E%E8%B4%9F">税负</a>及<a target="_blank" rel="noopener" href="https://wiki.mbalib.com/wiki/%E4%BA%A4%E6%98%93%E6%88%90%E6%9C%AC">交易成本</a>。</p>
+<p>11、所有投资者可以及时免费获得充分的<a target="_blank" rel="noopener" href="https://wiki.mbalib.com/wiki/%E5%B8%82%E5%9C%BA%E4%BF%A1%E6%81%AF">市场信息</a>。无风险折现率R的水平下无限制地借入或贷出资金。</p>
+<p>12、不存在<a target="_blank" rel="noopener" href="https://wiki.mbalib.com/wiki/%E9%80%9A%E8%B4%A7%E8%86%A8%E8%83%80">通货膨胀</a>，且<a target="_blank" rel="noopener" href="https://wiki.mbalib.com/wiki/%E6%8A%98%E7%8E%B0%E7%8E%87">折现率</a>不变。</p>
+<p>13、投资者具有相同预期，即他们对预期收益率、<a target="_blank" rel="noopener" href="https://wiki.mbalib.com/wiki/%E6%A0%87%E5%87%86%E5%B7%AE">标准差</a>和证券之间的<a target="_blank" rel="noopener" href="https://wiki.mbalib.com/wiki/%E5%8D%8F%E6%96%B9%E5%B7%AE">协方差</a>具有相同的预期值。</p>
+</blockquote>
+<p>不是说做这些假设不行，但是在给特定的公司估值的时候，有很多假设与事实的偏差过大。毕竟CAPM是一个奠基性的、开创性的模型，这种东西假设一般都很苛刻。</p>
+<p><strong>假设现在我们是一家风险投资机构，要给一家互联网初创企业估值，让我们看看CAMP哪些假设是与互联网初创企业完全不符合的</strong>（不是说没列出来的就符合，只是说，我在这里想强调每种类型的企业要用不同的方法、模型来确定资本成本，所以列出来的几条是初创企业独有的特点）：</p>
+<blockquote>
+<p> 8、所有投资者具有相同的<a target="_blank" rel="noopener" href="https://wiki.mbalib.com/wiki/%E6%8A%95%E8%B5%84%E6%9C%9F%E9%99%90">投资期限</a>，而且只有一期。</p>
+</blockquote>
+<p>一般风险投资机构的不同投资人，都有不同的期限偏好，这就是为什么基金会设置三年五年七年等退出期限。期限匹配是早期投资中非常重要的一点，因为只有让每种期限偏好的投资人都有合适的退出窗口，才能多募钱，但是CAPM直接就假设期限都一样了。</p>
+<blockquote>
+<p>9、所有的<a target="_blank" rel="noopener" href="https://wiki.mbalib.com/wiki/%E8%AF%81%E5%88%B8%E6%8A%95%E8%B5%84">证券投资</a>可以无限制的细分，在任何一个<a target="_blank" rel="noopener" href="https://wiki.mbalib.com/wiki/%E6%8A%95%E8%B5%84%E7%BB%84%E5%90%88">投资组合</a>里可以含有非整数股份。</p>
+</blockquote>
+<p>通常早期投资就投几个企业，不存在所谓的风险分散，也不存在所谓的投资组合。</p>
+<blockquote>
+<ol start="10">
+<li>买卖证券时没有<a target="_blank" rel="noopener" href="https://wiki.mbalib.com/wiki/%E7%A8%8E%E8%B4%9F">税负</a>及<a target="_blank" rel="noopener" href="https://wiki.mbalib.com/wiki/%E4%BA%A4%E6%98%93%E6%88%90%E6%9C%AC">交易成本</a>。</li>
+</ol>
+</blockquote>
+<p>早期投资交易成本老高了。</p>
+<blockquote>
+<ol start="2">
+<li>投资者能事先知道<a target="_blank" rel="noopener" href="https://wiki.mbalib.com/wiki/%E6%8A%95%E8%B5%84%E6%94%B6%E7%9B%8A%E7%8E%87">投资收益率</a>的<a target="_blank" rel="noopener" href="https://wiki.mbalib.com/wiki/%E6%A6%82%E7%8E%87%E5%88%86%E5%B8%83">概率分布</a>为<a target="_blank" rel="noopener" href="https://wiki.mbalib.com/wiki/%E6%AD%A3%E6%80%81%E5%88%86%E5%B8%83">正态分布</a>。</li>
+</ol>
+</blockquote>
+<p>早期投资的风险肯定是不确定的，不存在正态分布的投资收益率。</p>
+<blockquote>
+<p>11、所有投资者可以及时免费获得充分的<a target="_blank" rel="noopener" href="https://wiki.mbalib.com/wiki/%E5%B8%82%E5%9C%BA%E4%BF%A1%E6%81%AF">市场信息</a>。无风险折现率R的水平下无限制地借入或贷出资金。</p>
+</blockquote>
+<p>初创企业一般都不披露财务信息，只有尽职调查的时候才能知道想要的信息，钱投出去之后就没有“免费获得的充分信息”了。说买股票的话，花点钱买个wind数据库就能了解信息了，可以假装没看见事实与假设的不符合。但是尽职调查通常都得一个团队出差好几天才能做，要花费大量的时间与金钱。</p>
+<p><strong>总之，以上列出了一些CAPM不适用于早期投资的理由。在进行并购交易和其他我不太了解的交易形式时，会有其他理由使得CAPM不适用与估计资本成本。</strong></p>
+<h3 id="增补型资本资产定价模型-MCAPM"><a href="#增补型资本资产定价模型-MCAPM" class="headerlink" title="增补型资本资产定价模型, MCAPM"></a>增补型资本资产定价模型, MCAPM</h3><p>资本资产定价模型如下：<br>$$<br>R_e = R_f+\beta(ERP)<br>$$<br>增补资本资产定价模型是对资本资产定价模型的改动，可以表述如下：<br>$$<br>R_e = R_f+\beta(ERP)+SCP+SCRP<br>$$<br>其实就是加了两个东西：</p>
+<p>SCP, Small Company Premium：小公司风险溢价，目的是为了处理小公司群体的特有风险</p>
+<p>SCRP,  Specific Company Risk Premium：具体公司风险溢价，取决于目标公司的优势或劣势，被称作非系统性风险。与β不同，β只是把系统性风险放大的一个倍数，而SCRP是产生于目标公司的、独立于市场的风险，不会像β一样随着市场的波动而波动。</p>
+<p>如果能找到一组与目标公司及其类似的上市公司，那么增补资本资产定价模型就是有效的。如果有一组三到六个（多了更好）类似的上市公司，分析一下他们的经营特征和财务特征。</p>
+<p><strong>但是我认为这个模型还是有点问题。</strong>β代表公司对系统性风险放大的倍数，而SCRP代表公司独有的风险。这时候定义就有点乱了，书上没有讲太清楚。</p>
+<p>我认为，β和SCRP都是表示个别公司的风险，这两个指标加在一起，共同解释了具体公司的波动与市场波动的不同。但是这不同中，有一部分只是因为公司会成倍数地放大、缩小市场的风险，波动和市场是一样的，只不过幅度不同，这一部分就是β；而另一部分不同，代表公司不单单是简单地放大/缩小系统性风险的那部分公司特有的风险。但是实际上，β和SCRP很难分开，这就会给公式的运用带来很多麻烦。</p>
+<p>也许就是因为这个原因，才有了后面的扩展模型。扩展模型不同于增补资本资产定价模型：增补资本资产定价模型只是考虑到资本资产定价模型的假设条件太多了，把模型改了改，所以叫增补；而扩展模型干脆把资本资产定价模型推到重来，直接建立一个适用于规模小、不确定性高的模型。</p>
+<h3 id="扩展模型-Build-up-model"><a href="#扩展模型-Build-up-model" class="headerlink" title="扩展模型, Build-up model"></a>扩展模型, Build-up model</h3><p>$$<br>R_e=R_f+ERP+SCP+SCRP<br>$$</p>
+<p>关于每个因子，最详细的数据是《估值手册——资本成本的美国指南》。但是目前没有找到中国版本的估值常用数据。</p>
+<ol>
+<li>无风险利率：需要注意的是，我之前以为无风险利率就是随便找一个国债就行。后来发现，无风险利率也要尽量找一个与投资期限相同的国债利率。比如我预计十年后退出，那就要找十年的国债。</li>
+<li>ERP表示投资于大型上市交易的普通股附加的风险。这些数据每年在《估值手册》中都有编写。</li>
+<li>SCP表示小上市公司的普通股票新增的风险。</li>
+<li>SCRP反映了公司和行业独有的风险。它在一定程度上量化了不同于“典型的小型上市公司”不同的那部分需要付出的风险溢价。至于如何评估具体的SCRP，我目前主要参考《并购估值——构建和衡量非上市公司的价值》第十一章中给出的一些条件，在这里就不复制过来了。</li>
+</ol>
+<p>需要注意的是，扩展模型中的SCRP和增补资本资产定价模型中的SCRP内在含义不同。扩展模型中的SCRP包括了β代表的风险，而MCAPM模型中，把β代表的风险与SCRP代表的风险分开表述了。所以通常情况下，扩展模型中的SCRP要比增补资本资产定价模型中的SCRP小一些。</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
     <link itemprop="mainEntityOfPage" href="http://www.fang.bio/2021/05/10/Git%20gnutls_handshake()%20failed%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1087,107 +1243,6 @@
   
   
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://www.fang.bio/2021/02/14/K%E7%BA%BF%E7%9A%84%E6%9C%AC%E8%B4%A8/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="郭放">
-      <meta itemprop="description" content="身居猪圈，仰望星空。<br /> From Soil to Stars">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="郭放的博客">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2021/02/14/K%E7%BA%BF%E7%9A%84%E6%9C%AC%E8%B4%A8/" class="post-title-link" itemprop="url">K线的本质</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2021-02-14 16:34:54" itemprop="dateCreated datePublished" datetime="2021-02-14T16:34:54+08:00">2021-02-14</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2021-05-10 10:52:43" itemprop="dateModified" datetime="2021-05-10T10:52:43+08:00">2021-05-10</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">In</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E4%BA%A4%E6%98%93/" itemprop="url" rel="index"><span itemprop="name">交易</span></a>
-                </span>
-            </span>
-
-          
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
-      </span>
-      <span class="post-meta-item-text">Valine: </span>
-    
-    <a title="valine" href="/2021/02/14/K%E7%BA%BF%E7%9A%84%E6%9C%AC%E8%B4%A8/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2021/02/14/K%E7%BA%BF%E7%9A%84%E6%9C%AC%E8%B4%A8/" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>标题起的比较唬人，我不认为我理解的“交易”或者“投资”的本质，那些都是复杂而广义的概念。</p>
-<p>但是K线就是一个简单的工具，不像是那些富有哲理的名词，它有精确的定义，工具属性极强，所以我暂且自信地把标题起为“K线的本质”。如果我以后发现不是这么回事、发现K线比我想象的复杂多了、突然认为K线不只有工具属性，那就是另外一回事了。 </p>
-<p><strong>K线的作用就是显示历史价格的轨迹，而历史价格的轨迹是多空博弈的结果。</strong></p>
-<p>价格的形成机制在不同的市场上不太一样，微观上来讲，现行市场价格的形成原因可以用深度图很好地体现出来。在竞价(Auction)机制中，同一时间每个价位都有不同的量想要买入\卖出。一个价位限价单被市价单吃掉，价格就会走向下一个价位交易。换句话说，一个价位上的量被买空了（卖同理 ），就得买（卖）下一个价位的了。软件上显示出来的价格，是当前的成交价格。而当前的成交价格及其走势是多空博弈形成的。无非就是买方深度大，价格往上走，卖方深度大，价格往下走，原理上并不复杂。</p>
-<p>另外多说一点，当前的成交价格可能不止一个，比如当有人一下子把最优五档价格都买光的时候，当前成交价格就有五个。虽然从逻辑上来讲，肯定是最优一档的价格比最优二档的价格先卖掉，然后以此类推到第五代档。但是在交易系统中，这五档是在计算机中同时结算并达成交易的，所以会存在这种现象。我不知道当这种情况出现的时候屏幕上显示的数字是怎么算的，但是这不影响接下来的阐述。</p>
-<p>K线之所以被广泛采用，是因为它可以在有限的屏幕空间上尽可能的显示更多细节，而又不抛弃整体。要是想最最最准确表达历史上的价格轨迹，其实不应该用什么线，而是应该直接把历史所有交易记录列出来，只要用图就会损失信息细节。但是由于人脑过于愚蠢，功能有限，只有电脑才能消化这些数据，人还是要看图的。另外，屏幕的像素点有限，分时图无法显示一个较长时间段内的价格波动，只能用K线来显示更多的信息，帮助愚蠢的人脑来理解电脑一下子就能理解的历史交易记录和价格走势。</p>
-<p><strong>有人喜欢分析K线，我认为是没有问题的。但是这里有两种分析的思路：</strong></p>
-<ol>
-<li><strong>多空博弈形成历史价格，历史价格简化成人脑能理解的图形（比如K线），然后我直接去分析这些图形。</strong></li>
-<li><strong>多空博弈形成历史价格，历史价格简化成人脑能理解的图形（比如K线），我先把图形（比如K线）翻译成历史价格和多空力量的博弈，然后去分析历史价格和多空力量的博弈的过程传递给我的信息。</strong></li>
-</ol>
-<p><strong>显然第二种思路是对的，但我们很容易陷入第一种思路</strong>。</p>
-<p>我上次在画家地小区里中国体育彩票那儿还看见一个彩票版的K线，这就是过度使用K线的结果。还真有个大爷在那里分析给大家听。</p>
-<p>K线传递历史价格和多空博弈的信息，就像是摩尔斯电码传递文字。直接拿着K线来分析，就像是直接把摩尔斯电码的各种长短直线拿来分析，显然是不行的。</p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
 
   
   <nav class="pagination">
@@ -1257,7 +1312,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">22</span>
+          <span class="site-state-item-count">23</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -1373,6 +1428,59 @@
   
 
   
+      
+
+<script>
+  if (typeof MathJax === 'undefined') {
+    window.MathJax = {
+      loader: {
+        source: {
+          '[tex]/amsCd': '[tex]/amscd',
+          '[tex]/AMScd': '[tex]/amscd'
+        }
+      },
+      tex: {
+        inlineMath: {'[+]': [['$', '$']]},
+        tags: 'ams'
+      },
+      options: {
+        renderActions: {
+          findScript: [10, doc => {
+            document.querySelectorAll('script[type^="math/tex"]').forEach(node => {
+              const display = !!node.type.match(/; *mode=display/);
+              const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+              const text = document.createTextNode('');
+              node.parentNode.replaceChild(text, node);
+              math.start = {node: text, delim: '', n: 0};
+              math.end = {node: text, delim: '', n: 0};
+              doc.math.push(math);
+            });
+          }, '', false],
+          insertedScript: [200, () => {
+            document.querySelectorAll('mjx-container').forEach(node => {
+              let target = node.parentNode;
+              if (target.nodeName.toLowerCase() === 'li') {
+                target.parentNode.classList.add('has-jax');
+              }
+            });
+          }, '', false]
+        }
+      }
+    };
+    (function () {
+      var script = document.createElement('script');
+      script.src = '//cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js';
+      script.defer = true;
+      document.head.appendChild(script);
+    })();
+  } else {
+    MathJax.startup.document.state(0);
+    MathJax.texReset();
+    MathJax.typeset();
+  }
+</script>
+
+    
 
   
 
